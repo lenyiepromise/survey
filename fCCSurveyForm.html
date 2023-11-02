@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Survey Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fCCSurveyForm.css">
+    </head>
+
+    <body>
+        <div class="all">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This form is provided to get some details from you. <br>Details provided will not be acted upon; they are required as a filler for the form designed by Lenyie Promise for a Survey Form project on fCC.</p>
+            <hr width="80%">
+            <div class="inputfields">
+                <form id="survey-form">
+                        <div class="personal">
+                            <label id="name-label">
+                                <input id="name" type="text" placeholder="Full Name" required>
+                            </label>
+                            <br>
+                            <label id="email-label">
+                                <input id="email" type="email" placeholder="Email" required>
+                            </label>
+                            <br>
+                            <label id="number-label">
+                                <input id="number" type="number" placeholder="Phone Number" required>
+                            </label>
+                        </div>
+                        <select id="dropdown">
+                            <option value="" checked>Gender</option>
+                            <option name="sex" value="male">Male</option>
+                            <option name="sex" value="female">Female</option>
+                        </select>
+                        <div class="demography">
+                            <input name="demography" type="radio" value="youth">18 - 40years 
+                            <br>
+                            <input name="demography" type="radio" value="adult">41 - 69years
+                            <br>
+                            <input name="demography" type="radio" value="aged">70 above
+                        </div>
+                    <div class="academicstatus">
+                        <input name="educational-status" type="checkbox" value="ex-student"> Ex-Student
+                        <br>
+                        <input name="educational-status" type="checkbox" value="undergraduate"> Undergraduate
+                        <br>
+                        <input name="educational-status" type="checkbox" value="graduate"> Graduate
+                        <br>
+                        <input name="educational-status" type="checkbox" value="Msc-student"> Graduate Student
+                        <br>
+                        <input name="educational-status" type="checkbox" value="PhD-student"> Doctoral Student
+                    </div>
+                    <textarea id="comment" placeholder="Write comment"></textarea>
+                    <br>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
